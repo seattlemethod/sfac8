@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation=" http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_BalanceSheet" xlink:label="disclosures_BalanceSheet" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_BalanceSheet" xlink:to="disclosures_BalanceSheet_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_BalanceSheet_lbl" xml:lang="en-US">Balance Sheet</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_ChangesInEquity" xlink:label="disclosures_ChangesInEquity" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_ChangesInEquity" xlink:to="disclosures_ChangesInEquity_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_ChangesInEquity_lbl" xml:lang="en-US">Changes in Equity</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_ChangesInFundBalance" xlink:label="disclosures_ChangesInFundBalance" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_ChangesInFundBalance" xlink:to="disclosures_ChangesInFundBalance_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_ChangesInFundBalance_lbl" xml:lang="en-US">Changes in Fund Balance</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_ChangesInNetAssets" xlink:label="disclosures_ChangesInNetAssets" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_ChangesInNetAssets" xlink:to="disclosures_ChangesInNetAssets_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_ChangesInNetAssets_lbl" xml:lang="en-US">Changes in Net Assets</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_ComprehensiveIncome" xlink:label="disclosures_ComprehensiveIncome" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_ComprehensiveIncome" xlink:to="disclosures_ComprehensiveIncome_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_ComprehensiveIncome_lbl" xml:lang="en-US">Comprehensive Income</label>
+
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_ComprehensiveIncomeAlternative" xlink:label="disclosures_ComprehensiveIncomeAlternative" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_ComprehensiveIncomeAlternative" xlink:to="disclosures_ComprehensiveIncomeAlternative_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_ComprehensiveIncomeAlternative_lbl" xml:lang="en-US">Comprehensive Income Alternative</label>
+
+
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_DisclosuresAbstract" xlink:label="disclosures_DisclosuresAbstract" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_DisclosuresAbstract" xlink:to="disclosures_DisclosuresAbstract_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_DisclosuresAbstract_lbl" xml:lang="en-US">Disclosures [Abstract]</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_FundBalance" xlink:label="disclosures_FundBalance" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_FundBalance" xlink:to="disclosures_FundBalance_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_FundBalance_lbl" xml:lang="en-US">Fund Balance</label>
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_NetAssets" xlink:label="disclosures_NetAssets" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="disclosures_NetAssets" xlink:to="disclosures_NetAssets_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="disclosures_NetAssets_lbl" xml:lang="en-US">Net Assets</label>
+  </labelLink>
+</linkbase>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation=" http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <roleRef xlink:type="simple" xlink:href="disclosures.xsd#Disclosures" roleURI="https://github.com/seattlemethod/sfac8/disclosures/role/Disclosures" />
+  <definitionLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/sfac8/disclosures/role/Disclosures">
+    <loc xlink:type="locator" xlink:href="https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Disclosure" xlink:label="cm_Disclosure" />
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_BalanceSheet" xlink:label="disclosures_BalanceSheet" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/general-special" xlink:from="cm_Disclosure" xlink:to="disclosures_BalanceSheet" order="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_ComprehensiveIncome" xlink:label="disclosures_ComprehensiveIncome" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/general-special" xlink:from="cm_Disclosure" xlink:to="disclosures_ComprehensiveIncome" order="2" use="optional" />
+
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_ComprehensiveIncomeAlternative" xlink:label="disclosures_ComprehensiveIncomeAlternative" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/general-special" xlink:from="cm_Disclosure" xlink:to="disclosures_ComprehensiveIncomeAlternative" order="2.5" use="optional" />
+
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_ChangesInEquity" xlink:label="disclosures_ChangesInEquity" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/general-special" xlink:from="cm_Disclosure" xlink:to="disclosures_ChangesInEquity" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_NetAssets" xlink:label="disclosures_NetAssets" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/general-special" xlink:from="cm_Disclosure" xlink:to="disclosures_NetAssets" order="4" use="optional" />
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_FundBalance" xlink:label="disclosures_FundBalance" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/general-special" xlink:from="cm_Disclosure" xlink:to="disclosures_FundBalance" order="5" use="optional" />
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_ChangesInNetAssets" xlink:label="disclosures_ChangesInNetAssets" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/general-special" xlink:from="cm_Disclosure" xlink:to="disclosures_ChangesInNetAssets" order="6" use="optional" />
+    <loc xlink:type="locator" xlink:href="disclosures.xsd#disclosures_ChangesInFundBalance" xlink:label="disclosures_ChangesInFundBalance" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/general-special" xlink:from="cm_Disclosure" xlink:to="disclosures_ChangesInFundBalance" order="7" use="optional" />
+  </definitionLink>
+</linkbase>

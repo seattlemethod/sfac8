@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+ 
+<link:linkbase
+    xmlns='http://www.xbrl.org/2003/linkbase'
+    xmlns:xbrldt='http://xbrl.org/2005/xbrldt'
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:xlink='http://www.w3.org/1999/xlink'
+    xmlns:link='http://www.xbrl.org/2003/linkbase'
+    xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+
+   <link:roleRef xlink:type='simple' xlink:href='dm-extended-link-roles.xsd#ChangesInFundBalance' roleURI='https://github.com/seattlemethod/sfac8/dm/elr/role/DisclosureMechanics/ChangesInFundBalance'/>
+
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#disclosure-hasConceptArrangementPattern' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-hasConceptArrangementPattern'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#disclosure-requiresHypercube' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-requiresHypercube'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#disclosure-requiresConcept' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-requiresConcept'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#conceptArrangementPattern-requiresConcept' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/conceptArrangementPattern-requiresConcept'/>
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/dm/elr/role/DisclosureMechanics/ChangesInFundBalance' xlink:title='A representation of this disclosure will always include this hypercube'>
+      <link:loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_ChangesInFundBalance' xlink:label='disclosures_ChangesInFundBalance' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInFundBalanceHypercube' xlink:label='sfac8_ChangesInFundBalanceHypercube' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-requiresHypercube' xlink:from='disclosures_ChangesInFundBalance' xlink:to='sfac8_ChangesInFundBalanceHypercube' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/dm/elr/role/DisclosureMechanics/ChangesInFundBalance' xlink:title='This ChangesInFundBalance disclosure is a Arithmetic concept arrangment pattern.'>
+      <link:loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_ChangesInFundBalance' xlink:label='disclosures_ChangesInFundBalance' />
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_RollForward' xlink:label='cm_RollForward' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-hasConceptArrangementPattern' xlink:from='disclosures_ChangesInFundBalance' xlink:to='cm_RollForward' order='2' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/dm/elr/role/DisclosureMechanics/ChangesInFundBalance' xlink:title='The ChangesInFundBalance disclosure requires the fact Equity to be reported.'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_RollForward' xlink:label='cm_RollForward' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalance' xlink:label='sfac8_FundBalance' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/conceptArrangementPattern-requiresConcept' xlink:from='cm_RollForward' xlink:to='sfac8_FundBalance' order='3' use='optional' />
+   </link:definitionLink>
+
+</link:linkbase>

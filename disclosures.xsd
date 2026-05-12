@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:disclosures="https://github.com/seattlemethod/sfac8/disclosures" targetNamespace="https://github.com/seattlemethod/sfac8/disclosures" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="https://github.com/seattlemethod/sfac8/disclosures/role/Disclosures" id="Disclosures">
+        <link:definition>Disclosures</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="disclosures-label.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Label Links, all" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="disclosures-doc.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Documentation Links, all" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="disclosures-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Presentation Links, all" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="disclosures-definition.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Definition Links, all" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="https://github.com/seattlemethod/universal/cm" schemaLocation="https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd" />
+  <complexType name="disclosureItemType">
+    <simpleContent>
+      <restriction base="xbrli:tokenItemType">
+        <attributeGroup ref="xbrli:nonNumericItemAttrs" />
+      </restriction>
+    </simpleContent>
+  </complexType>
+  <element id="disclosures_BalanceSheet" name="BalanceSheet" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_ChangesInEquity" name="ChangesInEquity" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_ChangesInFundBalance" name="ChangesInFundBalance" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_ChangesInNetAssets" name="ChangesInNetAssets" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_ComprehensiveIncome" name="ComprehensiveIncome" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_ComprehensiveIncomeAlternative" name="ComprehensiveIncomeAlternative" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_DisclosuresAbstract" name="DisclosuresAbstract" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="disclosures_FundBalance" name="FundBalance" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+  <element id="disclosures_NetAssets" name="NetAssets" type="disclosures:disclosureItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" />
+</schema>

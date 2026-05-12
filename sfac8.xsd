@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:nonnum='http://www.xbrl.org/dtr/type/non-numeric'
+  xmlns:num='http://www.xbrl.org/dtr/type/numeric'
+  xmlns:xbrldt='http://xbrl.org/2005/xbrldt'
+  xmlns:generic='http://xbrl.org/2008/generic'
+
+  xmlns:sfac8='https://github.com/seattlemethod/sfac8'
+  targetNamespace='https://github.com/seattlemethod/sfac8'
+
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <documentation>SFAC 8 Elements of Financial Statements</documentation>
+    <appinfo>
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/labelLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac8-lab.xml' xlink:title='Label Links, all' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/referenceLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac8-ref.xml' xlink:title='Reference Links, all' />
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+  <import namespace='http://www.xbrl.org/2003/linkbase' schemaLocation='http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd' />
+  <import namespace='http://xbrl.org/2005/xbrldt' schemaLocation='http://www.xbrl.org/2005/xbrldt-2005.xsd' />
+  <import namespace='http://www.xbrl.org/dtr/type/non-numeric' schemaLocation='http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd' />
+  <import namespace='http://www.xbrl.org/dtr/type/numeric' schemaLocation='http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd' />
+
+  <element id='sfac8_Assets' name='Assets' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='instant' xbrli:balance='debit'  nillable='true' />
+  <element id='sfac8_BalanceSheetHypercube' name='BalanceSheetHypercube' type='xbrli:stringItemType' substitutionGroup='xbrldt:hypercubeItem' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_BalanceSheetLineItems' name='BalanceSheetLineItems' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_BalanceSheetArithmetic' name='BalanceSheetArithmetic' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_ChangeInNetAssets' name='ChangeInNetAssets' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac8_ChangesInEquityHypercube' name='ChangesInEquityHypercube' type='xbrli:stringItemType' substitutionGroup='xbrldt:hypercubeItem' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_ChangesInEquityLineItems' name='ChangesInEquityLineItems' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_ChangesInEquityRollForward' name='ChangesInEquityRollForward' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_ChangesInFundBalanceHypercube' name='ChangesInFundBalanceHypercube' type='xbrli:stringItemType' substitutionGroup='xbrldt:hypercubeItem' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_ChangesInFundBalanceLineItems' name='ChangesInFundBalanceLineItems' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_ChangesInFundBalanceRollForward' name='ChangesInFundBalanceRollForward' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_ChangesInNetAssetsHypercube' name='ChangesInNetAssetsHypercube' type='xbrli:stringItemType' substitutionGroup='xbrldt:hypercubeItem' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_ChangesInNetAssetsLineItems' name='ChangesInNetAssetsLineItems' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_ChangesInNetAssetsRollUp' name='ChangesInNetAssetsRollUp' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_ComprehensiveIncome' name='ComprehensiveIncome' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac8_ComprehensiveIncomeRollUp' name='ComprehensiveIncomeRollUp' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_ComprehensiveIncomeStatementHypercube' name='ComprehensiveIncomeStatementHypercube' type='xbrli:stringItemType' substitutionGroup='xbrldt:hypercubeItem' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_ComprehensiveIncomeStatementLineItems' name='ComprehensiveIncomeStatementLineItems' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_DistributionsToOwners' name='DistributionsToOwners' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='debit'  nillable='true' />
+  <element id='sfac8_Equity' name='Equity' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='instant' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac8_Expenses' name='Expenses' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='debit'  nillable='true' />
+  <element id='sfac8_FundBalance' name='FundBalance' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='instant' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac8_FundBalanceHypercube' name='FundBalanceHypercube' type='xbrli:stringItemType' substitutionGroup='xbrldt:hypercubeItem' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_FundBalanceLineItems' name='FundBalanceLineItems' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_FundBalanceWithDonorRestrictions' name='FundBalanceWithDonorRestrictions' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='instant' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac8_FundBalanceRollUp' name='FundBalanceRollUp' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_FundBalanceWithoutDonorRestrictions' name='FundBalanceWithoutDonorRestrictions' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='instant' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac8_Gains' name='Gains' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac8_IncomeFromNormalActivitiesOfEntity' name='IncomeFromNormalActivitiesOfEntity' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac8_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' name='IncomeFromPeripheralOrIncidentalTransactionsOfEntity' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac8_InvestmentsByOwners' name='InvestmentsByOwners' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac8_Liabilities' name='Liabilities' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='instant' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac8_Losses' name='Losses' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='debit'  nillable='true' />
+  <element id='sfac8_NetAssets' name='NetAssets' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='instant' xbrli:balance='debit'  nillable='true' />
+  <element id='sfac8_NetAssetsHypercube' name='NetAssetsHypercube' type='xbrli:stringItemType' substitutionGroup='xbrldt:hypercubeItem' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_NetAssetsLineItems' name='NetAssetsLineItems' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_NetAssetsRollUp' name='NetAssetsRollUp' type='xbrli:stringItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration'  abstract='true' nillable='true' />
+  <element id='sfac8_OtherIncreasesDecreasesInFundBalance' name='OtherIncreasesDecreasesInFundBalance' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='credit'  nillable='true' />
+  <element id='sfac8_Revenues' name='Revenues' type='xbrli:monetaryItemType' substitutionGroup='xbrli:item' xbrli:periodType='duration' xbrli:balance='credit'  nillable='true' />
+
+</schema>

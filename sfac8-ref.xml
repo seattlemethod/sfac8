@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='utf-8'?>
+ 
+<linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ref='http://www.xbrl.org/2004/ref' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd http://www.xbrl.org/2004/ref http://www.xbrl.org/2004/ref-2004-08-10.xsd'>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Assets' xlink:label='sfac8_Assets' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='sfac8_Assets' xlink:to='sfac8_Assets_lbl' />
+    <reference xlink:type='resource' xlink:label='sfac8_Assets_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>8</ref:Number>
+       <ref:Paragraph>25</ref:Paragraph>
+       <ref:URI>https://fasb.org/page/PageContent?pageId=/standards/concepts-statements.html</ref:URI>
+       <ref:URIDate>2022-06-12</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Equity' xlink:label='sfac8_Equity' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='sfac8_Equity' xlink:to='sfac8_Equity_lbl' />
+    <reference xlink:type='resource' xlink:label='sfac8_Equity_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>8</ref:Number>
+       <ref:Paragraph>49</ref:Paragraph>
+       <ref:URI>https://fasb.org/page/PageContent?pageId=/standards/concepts-statements.html</ref:URI>
+       <ref:URIDate>2022-06-12</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Liabilities' xlink:label='sfac8_Liabilities' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='sfac8_Liabilities' xlink:to='sfac8_Liabilities_lbl' />
+    <reference xlink:type='resource' xlink:label='sfac8_Liabilities_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>8</ref:Number>
+       <ref:Paragraph>35</ref:Paragraph>
+       <ref:URI>https://fasb.org/page/PageContent?pageId=/standards/concepts-statements.html</ref:URI>
+       <ref:URIDate>2022-06-12</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Revenues' xlink:label='sfac8_Revenues' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='sfac8_Revenues' xlink:to='sfac8_Revenues_lbl' />
+    <reference xlink:type='resource' xlink:label='sfac8_Revenues_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>8</ref:Number>
+       <ref:Paragraph>79</ref:Paragraph>
+       <ref:URI>https://fasb.org/page/PageContent?pageId=/standards/concepts-statements.html</ref:URI>
+       <ref:URIDate>2022-06-12</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Expenses' xlink:label='sfac8_Expenses' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='sfac8_Expenses' xlink:to='sfac8_Expenses_lbl' />
+    <reference xlink:type='resource' xlink:label='sfac8_Expenses_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>8</ref:Number>
+       <ref:Paragraph>81</ref:Paragraph>
+       <ref:URI>https://fasb.org/page/PageContent?pageId=/standards/concepts-statements.html</ref:URI>
+       <ref:URIDate>2022-06-12</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Gains' xlink:label='sfac8_Gains' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='sfac8_Gains' xlink:to='sfac8_Gains_lbl' />
+    <reference xlink:type='resource' xlink:label='sfac8_Gains_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>8</ref:Number>
+       <ref:Paragraph>84</ref:Paragraph>
+       <ref:URI>https://fasb.org/page/PageContent?pageId=/standards/concepts-statements.html</ref:URI>
+       <ref:URIDate>2022-06-12</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Losses' xlink:label='sfac8_Losses' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='sfac8_Losses' xlink:to='sfac8_Losses_lbl' />
+    <reference xlink:type='resource' xlink:label='sfac8_Losses_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>8</ref:Number>
+       <ref:Paragraph>84</ref:Paragraph>
+       <ref:URI>https://fasb.org/page/PageContent?pageId=/standards/concepts-statements.html</ref:URI>
+       <ref:URIDate>2022-06-12</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncome' xlink:label='sfac8_ComprehensiveIncome' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='sfac8_ComprehensiveIncome' xlink:to='sfac8_ComprehensiveIncome_lbl' />
+    <reference xlink:type='resource' xlink:label='sfac8_ComprehensiveIncome_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>8</ref:Number>
+       <ref:Paragraph>70</ref:Paragraph>
+       <ref:URI>https://fasb.org/page/PageContent?pageId=/standards/concepts-statements.html</ref:URI>
+       <ref:URIDate>2022-06-12</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_DistributionsToOwners' xlink:label='sfac8_DistributionsToOwners' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='sfac8_DistributionsToOwners' xlink:to='sfac8_DistributionsToOwners_lbl' />
+    <reference xlink:type='resource' xlink:label='sfac8_DistributionsToOwners_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>8</ref:Number>
+       <ref:Paragraph>68</ref:Paragraph>
+       <ref:URI>https://fasb.org/page/PageContent?pageId=/standards/concepts-statements.html</ref:URI>
+       <ref:URIDate>2022-06-12</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_NetAssets' xlink:label='sfac8_NetAssets' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='sfac8_NetAssets' xlink:to='sfac8_NetAssets_lbl' />
+    <reference xlink:type='resource' xlink:label='sfac8_NetAssets_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>8</ref:Number>
+       <ref:Paragraph>50</ref:Paragraph>
+       <ref:URI>https://fasb.org/page/PageContent?pageId=/standards/concepts-statements.html</ref:URI>
+       <ref:URIDate>2022-06-12</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_InvestmentsByOwners' xlink:label='sfac8_InvestmentsByOwners' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='sfac8_InvestmentsByOwners' xlink:to='sfac8_InvestmentsByOwners_lbl' />
+    <reference xlink:type='resource' xlink:label='sfac8_InvestmentsByOwners_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>8</ref:Number>
+       <ref:Paragraph>68</ref:Paragraph>
+       <ref:URI>https://fasb.org/page/PageContent?pageId=/standards/concepts-statements.html</ref:URI>
+       <ref:URIDate>2022-06-12</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalance' xlink:label='sfac8_FundBalance' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='sfac8_FundBalance' xlink:to='sfac8_FundBalance_lbl' />
+    <reference xlink:type='resource' xlink:label='sfac8_FundBalance_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>8</ref:Number>
+       <ref:Paragraph>52</ref:Paragraph>
+       <ref:URI>https://fasb.org/page/PageContent?pageId=/standards/concepts-statements.html</ref:URI>
+       <ref:URIDate>2022-06-12</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceWithDonorRestrictions' xlink:label='sfac8_FundBalanceWithDonorRestrictions' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='sfac8_FundBalanceWithDonorRestrictions' xlink:to='sfac8_FundBalanceWithDonorRestrictions_lbl' />
+    <reference xlink:type='resource' xlink:label='sfac8_FundBalanceWithDonorRestrictions_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>8</ref:Number>
+       <ref:Paragraph>92</ref:Paragraph>
+       <ref:URI>https://fasb.org/page/PageContent?pageId=/standards/concepts-statements.html</ref:URI>
+       <ref:URIDate>2022-06-12</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceWithoutDonorRestrictions' xlink:label='sfac8_FundBalanceWithoutDonorRestrictions' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='sfac8_FundBalanceWithoutDonorRestrictions' xlink:to='sfac8_FundBalanceWithoutDonorRestrictions_lbl' />
+    <reference xlink:type='resource' xlink:label='sfac8_FundBalanceWithoutDonorRestrictions_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>8</ref:Number>
+       <ref:Paragraph>94</ref:Paragraph>
+       <ref:URI>https://fasb.org/page/PageContent?pageId=/standards/concepts-statements.html</ref:URI>
+       <ref:URIDate>2022-06-12</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_OtherIncreasesDecreasesInFundBalance' xlink:label='sfac8_OtherIncreasesDecreasesInFundBalance' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='sfac8_OtherIncreasesDecreasesInFundBalance' xlink:to='sfac8_OtherIncreasesDecreasesInFundBalance_lbl' />
+    <reference xlink:type='resource' xlink:label='sfac8_OtherIncreasesDecreasesInFundBalance_lbl' xlink:role='http://www.xbrl.org/2003/role/reference'>
+       <ref:Publisher>FASB</ref:Publisher>
+       <ref:Name>SFAC</ref:Name>
+       <ref:Number>8</ref:Number>
+       <ref:Paragraph>103</ref:Paragraph>
+       <ref:URI>https://fasb.org/page/PageContent?pageId=/standards/concepts-statements.html</ref:URI>
+       <ref:URIDate>2022-06-12</ref:URIDate>
+    </reference>
+  </referenceLink>
+
+</linkbase>

@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='utf-8'?>
+ 
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+   <link:roleRef xlink:type='simple' xlink:href='sfac8-roles.xsd#BalanceSheet' roleURI='https://github.com/seattlemethod/sfac8/role/BalanceSheet'/>
+   <link:roleRef xlink:type='simple' xlink:href='sfac8-roles.xsd#ChangeInFundBalance' roleURI='https://github.com/seattlemethod/sfac8/role/ChangeInFundBalance'/>
+   <link:roleRef xlink:type='simple' xlink:href='sfac8-roles.xsd#ChangeInNetAssets' roleURI='https://github.com/seattlemethod/sfac8/role/ChangeInNetAssets'/>
+   <link:roleRef xlink:type='simple' xlink:href='sfac8-roles.xsd#ChangesInEquity' roleURI='https://github.com/seattlemethod/sfac8/role/ChangesInEquity'/>
+   <link:roleRef xlink:type='simple' xlink:href='sfac8-roles.xsd#ComprehensiveIncome' roleURI='https://github.com/seattlemethod/sfac8/role/ComprehensiveIncome'/>
+   <link:roleRef xlink:type='simple' xlink:href='sfac8-roles.xsd#ComprehensiveIncome2' roleURI='https://github.com/seattlemethod/sfac8/role/ComprehensiveIncome2'/>
+   <link:roleRef xlink:type='simple' xlink:href='sfac8-roles.xsd#NetAssets' roleURI='https://github.com/seattlemethod/sfac8/role/NetAssets'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default'/>
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ChangeInNetAssets'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInNetAssetsLineItems' xlink:label='sfac8_ChangesInNetAssetsLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Revenues' xlink:label='sfac8_Revenues' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ChangesInNetAssetsLineItems' xlink:to='sfac8_Revenues' order='1' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ChangeInFundBalance'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInFundBalanceLineItems' xlink:label='sfac8_ChangesInFundBalanceLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalance' xlink:label='sfac8_FundBalance' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ChangesInFundBalanceLineItems' xlink:to='sfac8_FundBalance' order='1' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ComprehensiveIncome2'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeStatementLineItems' xlink:label='sfac8_ComprehensiveIncomeStatementLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_IncomeFromNormalActivitiesOfEntity' xlink:label='sfac8_IncomeFromNormalActivitiesOfEntity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ComprehensiveIncomeStatementLineItems' xlink:to='sfac8_IncomeFromNormalActivitiesOfEntity' order='1' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/NetAssets'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceLineItems' xlink:label='sfac8_FundBalanceLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Assets' xlink:label='sfac8_Assets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_FundBalanceLineItems' xlink:to='sfac8_Assets' order='1' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/BalanceSheet'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_BalanceSheetLineItems' xlink:label='sfac8_BalanceSheetLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Assets' xlink:label='sfac8_Assets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_BalanceSheetLineItems' xlink:to='sfac8_Assets' order='1' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/NetAssets'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceLineItems' xlink:label='sfac8_FundBalanceLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Liabilities' xlink:label='sfac8_Liabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_FundBalanceLineItems' xlink:to='sfac8_Liabilities' order='2' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ChangeInFundBalance'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInFundBalanceLineItems' xlink:label='sfac8_ChangesInFundBalanceLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangeInNetAssets' xlink:label='sfac8_ChangeInNetAssets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ChangesInFundBalanceLineItems' xlink:to='sfac8_ChangeInNetAssets' order='2' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ChangeInNetAssets'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInNetAssetsLineItems' xlink:label='sfac8_ChangesInNetAssetsLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Expenses' xlink:label='sfac8_Expenses' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ChangesInNetAssetsLineItems' xlink:to='sfac8_Expenses' order='2' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/BalanceSheet'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_BalanceSheetLineItems' xlink:label='sfac8_BalanceSheetLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Liabilities' xlink:label='sfac8_Liabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_BalanceSheetLineItems' xlink:to='sfac8_Liabilities' order='2' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ComprehensiveIncome2'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeStatementLineItems' xlink:label='sfac8_ComprehensiveIncomeStatementLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' xlink:label='sfac8_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ComprehensiveIncomeStatementLineItems' xlink:to='sfac8_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' order='2' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/NetAssets'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceLineItems' xlink:label='sfac8_FundBalanceLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_NetAssets' xlink:label='sfac8_NetAssets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_FundBalanceLineItems' xlink:to='sfac8_NetAssets' order='3' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/BalanceSheet'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_BalanceSheetLineItems' xlink:label='sfac8_BalanceSheetLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Equity' xlink:label='sfac8_Equity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_BalanceSheetLineItems' xlink:to='sfac8_Equity' order='3' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ComprehensiveIncome2'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeStatementLineItems' xlink:label='sfac8_ComprehensiveIncomeStatementLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncome' xlink:label='sfac8_ComprehensiveIncome' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ComprehensiveIncomeStatementLineItems' xlink:to='sfac8_ComprehensiveIncome' order='3' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ChangeInFundBalance'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInFundBalanceLineItems' xlink:label='sfac8_ChangesInFundBalanceLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_OtherIncreasesDecreasesInFundBalance' xlink:label='sfac8_OtherIncreasesDecreasesInFundBalance' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ChangesInFundBalanceLineItems' xlink:to='sfac8_OtherIncreasesDecreasesInFundBalance' order='3' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ChangeInNetAssets'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInNetAssetsLineItems' xlink:label='sfac8_ChangesInNetAssetsLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Gains' xlink:label='sfac8_Gains' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ChangesInNetAssetsLineItems' xlink:to='sfac8_Gains' order='3' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/BalanceSheet'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_BalanceSheetLineItems' xlink:label='sfac8_BalanceSheetLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_BalanceSheetHypercube' xlink:label='sfac8_BalanceSheetHypercube' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='sfac8_BalanceSheetLineItems' xlink:to='sfac8_BalanceSheetHypercube' order='4' use='optional' xbrldt:contextElement='segment' xbrldt:closed='true' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ChangeInFundBalance'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInFundBalanceLineItems' xlink:label='sfac8_ChangesInFundBalanceLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInFundBalanceHypercube' xlink:label='sfac8_ChangesInFundBalanceHypercube' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='sfac8_ChangesInFundBalanceLineItems' xlink:to='sfac8_ChangesInFundBalanceHypercube' order='4' use='optional' xbrldt:contextElement='segment' xbrldt:closed='true' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/NetAssets'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceLineItems' xlink:label='sfac8_FundBalanceLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceHypercube' xlink:label='sfac8_FundBalanceHypercube' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='sfac8_FundBalanceLineItems' xlink:to='sfac8_FundBalanceHypercube' order='4' use='optional' xbrldt:contextElement='segment' xbrldt:closed='true' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ChangeInNetAssets'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInNetAssetsLineItems' xlink:label='sfac8_ChangesInNetAssetsLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Losses' xlink:label='sfac8_Losses' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ChangesInNetAssetsLineItems' xlink:to='sfac8_Losses' order='4' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ComprehensiveIncome2'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeStatementLineItems' xlink:label='sfac8_ComprehensiveIncomeStatementLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeStatementHypercube' xlink:label='sfac8_ComprehensiveIncomeStatementHypercube' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='sfac8_ComprehensiveIncomeStatementLineItems' xlink:to='sfac8_ComprehensiveIncomeStatementHypercube' order='4' use='optional' xbrldt:contextElement='segment' xbrldt:closed='true' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ChangeInNetAssets'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInNetAssetsLineItems' xlink:label='sfac8_ChangesInNetAssetsLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangeInNetAssets' xlink:label='sfac8_ChangeInNetAssets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ChangesInNetAssetsLineItems' xlink:to='sfac8_ChangeInNetAssets' order='5' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/NetAssets'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceLineItems' xlink:label='sfac8_FundBalanceLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalance' xlink:label='sfac8_FundBalance' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_FundBalanceLineItems' xlink:to='sfac8_FundBalance' order='5' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ChangeInNetAssets'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInNetAssetsLineItems' xlink:label='sfac8_ChangesInNetAssetsLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInNetAssetsHypercube' xlink:label='sfac8_ChangesInNetAssetsHypercube' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='sfac8_ChangesInNetAssetsLineItems' xlink:to='sfac8_ChangesInNetAssetsHypercube' order='6' use='optional' xbrldt:contextElement='segment' xbrldt:closed='true' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ComprehensiveIncome'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeStatementLineItems' xlink:label='sfac8_ComprehensiveIncomeStatementLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Revenues' xlink:label='sfac8_Revenues' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ComprehensiveIncomeStatementLineItems' xlink:to='sfac8_Revenues' order='6' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/NetAssets'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceLineItems' xlink:label='sfac8_FundBalanceLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceWithDonorRestrictions' xlink:label='sfac8_FundBalanceWithDonorRestrictions' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_FundBalanceLineItems' xlink:to='sfac8_FundBalanceWithDonorRestrictions' order='6' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ComprehensiveIncome'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeStatementLineItems' xlink:label='sfac8_ComprehensiveIncomeStatementLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Expenses' xlink:label='sfac8_Expenses' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ComprehensiveIncomeStatementLineItems' xlink:to='sfac8_Expenses' order='7' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ComprehensiveIncome'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeStatementLineItems' xlink:label='sfac8_ComprehensiveIncomeStatementLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Gains' xlink:label='sfac8_Gains' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ComprehensiveIncomeStatementLineItems' xlink:to='sfac8_Gains' order='8' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/NetAssets'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceLineItems' xlink:label='sfac8_FundBalanceLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceWithoutDonorRestrictions' xlink:label='sfac8_FundBalanceWithoutDonorRestrictions' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_FundBalanceLineItems' xlink:to='sfac8_FundBalanceWithoutDonorRestrictions' order='8' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ComprehensiveIncome'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeStatementLineItems' xlink:label='sfac8_ComprehensiveIncomeStatementLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeStatementHypercube' xlink:label='sfac8_ComprehensiveIncomeStatementHypercube' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='sfac8_ComprehensiveIncomeStatementLineItems' xlink:to='sfac8_ComprehensiveIncomeStatementHypercube' order='9' use='optional' xbrldt:contextElement='segment' xbrldt:closed='true' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ComprehensiveIncome'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeStatementLineItems' xlink:label='sfac8_ComprehensiveIncomeStatementLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Losses' xlink:label='sfac8_Losses' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ComprehensiveIncomeStatementLineItems' xlink:to='sfac8_Losses' order='10' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ChangesInEquity'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInEquityLineItems' xlink:label='sfac8_ChangesInEquityLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Equity' xlink:label='sfac8_Equity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ChangesInEquityLineItems' xlink:to='sfac8_Equity' order='11' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ChangesInEquity'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInEquityLineItems' xlink:label='sfac8_ChangesInEquityLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncome' xlink:label='sfac8_ComprehensiveIncome' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ChangesInEquityLineItems' xlink:to='sfac8_ComprehensiveIncome' order='12' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ComprehensiveIncome'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeStatementLineItems' xlink:label='sfac8_ComprehensiveIncomeStatementLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncome' xlink:label='sfac8_ComprehensiveIncome' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ComprehensiveIncomeStatementLineItems' xlink:to='sfac8_ComprehensiveIncome' order='13' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ChangesInEquity'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInEquityLineItems' xlink:label='sfac8_ChangesInEquityLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_InvestmentsByOwners' xlink:label='sfac8_InvestmentsByOwners' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ChangesInEquityLineItems' xlink:to='sfac8_InvestmentsByOwners' order='14' use='optional'  />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ChangesInEquity'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInEquityLineItems' xlink:label='sfac8_ChangesInEquityLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInEquityHypercube' xlink:label='sfac8_ChangesInEquityHypercube' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/all' xlink:from='sfac8_ChangesInEquityLineItems' xlink:to='sfac8_ChangesInEquityHypercube' order='15' use='optional' xbrldt:contextElement='segment' xbrldt:closed='true' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/role/ChangesInEquity'>
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInEquityLineItems' xlink:label='sfac8_ChangesInEquityLineItems' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_DistributionsToOwners' xlink:label='sfac8_DistributionsToOwners' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://xbrl.org/int/dim/arcrole/domain-member' xlink:from='sfac8_ChangesInEquityLineItems' xlink:to='sfac8_DistributionsToOwners' order='16' use='optional'  />
+   </link:definitionLink>
+
+</link:linkbase>

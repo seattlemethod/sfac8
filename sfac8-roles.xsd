@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:generic='http://xbrl.org/2008/generic'
+
+  xmlns:sfac8-roles='https://github.com/seattlemethod/sfac8/roles'
+  targetNamespace='https://github.com/seattlemethod/sfac8/roles'
+
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <documentation>SFAC 8 Elements of Financial Statements - ROLES</documentation>
+    <appinfo>
+      <link:roleType roleURI='https://github.com/seattlemethod/sfac8/role/BalanceSheet' id='BalanceSheet'>
+        <link:definition>11-Statement of Financial Position</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI='https://github.com/seattlemethod/sfac8/role/NetAssets' id='NetAssets'>
+        <link:definition>12-Statement of Net Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI='https://github.com/seattlemethod/sfac8/role/ComprehensiveIncome' id='ComprehensiveIncome'>
+        <link:definition>21-Statement of Comprehensive Income</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI='https://github.com/seattlemethod/sfac8/role/ComprehensiveIncome2' id='ComprehensiveIncome2'>
+        <link:definition>22-Statement of Comprehensive Income (Alternative)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI='https://github.com/seattlemethod/sfac8/role/ChangeInNetAssets' id='ChangeInNetAssets'>
+        <link:definition>23-Statement of Changes in Net Assets</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI='https://github.com/seattlemethod/sfac8/role/ChangesInEquity' id='ChangesInEquity'>
+        <link:definition>31-Statement of Changes in Equity</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI='https://github.com/seattlemethod/sfac8/role/ChangeInFundBalance' id='ChangeInFundBalance'>
+        <link:definition>32-Statement of Changes in Fund Balance</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI='https://github.com/seattlemethod/sfac8/role/FundBalance' id='FundBalance'>
+        <link:definition>41-Fund Balance</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+    </appinfo>
+  </annotation>
+
+
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+  <import namespace='http://www.xbrl.org/2003/linkbase' schemaLocation='http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd' />
+
+</schema>

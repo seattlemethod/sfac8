@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+ 
+<link:linkbase
+    xmlns='http://www.xbrl.org/2003/linkbase'
+    xmlns:xbrldt='http://xbrl.org/2005/xbrldt'
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:xlink='http://www.w3.org/1999/xlink'
+    xmlns:link='http://www.xbrl.org/2003/linkbase'
+    xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+
+   <link:roleRef xlink:type='simple' xlink:href='dm-extended-link-roles.xsd#ComprehensiveIncomeAlternative' roleURI='https://github.com/seattlemethod/sfac8/dm/elr/role/DisclosureMechanics/ComprehensiveIncomeAlternative'/>
+
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#disclosure-hasConceptArrangementPattern' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-hasConceptArrangementPattern'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#disclosure-requiresHypercube' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-requiresHypercube'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#disclosure-requiresConcept' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-requiresConcept'/>
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#conceptArrangementPattern-requiresConcept' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/conceptArrangementPattern-requiresConcept'/>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/dm/elr/role/DisclosureMechanics/ComprehensiveIncomeAlternative' xlink:title='A representation of this disclosure will always include this hypercube'>
+      <link:loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_ComprehensiveIncomeAlternative' xlink:label='disclosures_ComprehensiveIncomeAlternative' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeStatementHypercube' xlink:label='sfac8_ComprehensiveIncomeStatementHypercube' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-requiresHypercube' xlink:from='disclosures_ComprehensiveIncomeAlternative' xlink:to='sfac8_ComprehensiveIncomeStatementHypercube' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/dm/elr/role/DisclosureMechanics/ComprehensiveIncomeAlternative' xlink:title='This IncomeStatement disclosure is a Roll Up concept arrangment pattern.'>
+      <link:loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_ComprehensiveIncomeAlternative' xlink:label='disclosures_ComprehensiveIncomeAlternative' />
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_RollUp' xlink:label='cm_RollUp' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-hasConceptArrangementPattern' xlink:from='disclosures_ComprehensiveIncomeAlternative' xlink:to='cm_RollUp' order='2' use='optional' />
+   </link:definitionLink>
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/dm/elr/role/DisclosureMechanics/ComprehensiveIncomeAlternative' xlink:title='The IncomeStatement disclosure requires the fact ComprehensiveIncomeAlternative to be reported.'>
+     <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_RollUp' xlink:label='cm_RollUp' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncome' xlink:label='sfac8_ComprehensiveIncome' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/conceptArrangementPattern-requiresConcept' xlink:from='cm_RollUp' xlink:to='sfac8_ComprehensiveIncome' order='3' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/dm/elr/role/DisclosureMechanics/ComprehensiveIncomeAlternative'>
+      <link:loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_ComprehensiveIncomeAlternative' xlink:label='disclosures_ComprehensiveIncomeAlternative' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_IncomeFromNormalActivitiesOfEntity' xlink:label='sfac8_IncomeFromNormalActivitiesOfEntity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-requiresConcept' xlink:from='disclosures_ComprehensiveIncomeAlternative' xlink:to='sfac8_IncomeFromNormalActivitiesOfEntity' order='4' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/dm/elr/role/DisclosureMechanics/ComprehensiveIncomeAlternative'>
+      <link:loc xlink:type='locator' xlink:href='disclosures.xsd#disclosures_ComprehensiveIncomeAlternative' xlink:label='disclosures_ComprehensiveIncomeAlternative' />
+      <link:loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' xlink:label='sfac8_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-requiresConcept' xlink:from='disclosures_ComprehensiveIncomeAlternative' xlink:to='sfac8_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' order='5' use='optional' />
+   </link:definitionLink>
+
+</link:linkbase>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:fac="https://github.com/seattlemethod/sfac8/fac"
+  xmlns:generic="http://xbrl.org/2008/generic"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  targetNamespace="https://github.com/seattlemethod/sfac8/fac"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="https://github.com/seattlemethod/sfac8/fac/BalanceSheetClassified" id="BalanceSheetClassified">
+        <link:definition>FAC - 101-Balance Sheet Classified</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+        <link:usedOn>generic:link</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="fac-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Presentation Links, all" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="fac-definition.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Definition Links, all" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="fac-label.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Label Links, all" />
+
+      <link:linkbaseRef xlink:type="simple" xlink:href="fac-mapping-definition.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Mappings" />
+
+      <link:linkbaseRef xlink:type="simple" xlink:href="fac-consistency-assets-formula.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Consistency, Assets" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="fac-derive-assets-formula.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Derive, Assets" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="fac-derive-liabilities-formula.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Derive, Liabilities" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="fac-derive-equity-formula.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Derive, Equity" />
+
+
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+  <complexType name="ValidationRule">
+    <simpleContent>
+      <restriction base="xbrli:monetaryItemType" />
+    </simpleContent>
+  </complexType>
+  <element id="fac_Assets" name="Assets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="debit" nillable="true" />
+  <element id="fac_BalanceSheetArithmetic" name="BalanceSheetArithmetic" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_BalanceSheetClassifiedHypercube" name="BalanceSheetClassifiedHypercube" type="xbrli:stringItemType" substitutionGroup="xbrldt:hypercubeItem" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_BalanceSheetClassifiedLineItems" name="BalanceSheetClassifiedLineItems" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="duration" abstract="true" nillable="true" />
+  <element id="fac_Equity" name="Equity" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" nillable="true" />
+  <element id="fac_Liabilities" name="Liabilities" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" xbrli:balance="credit" nillable="true" />
+</schema>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:nonnum='http://www.xbrl.org/dtr/type/non-numeric'
+  xmlns:num='http://www.xbrl.org/dtr/type/numeric'
+  xmlns:xbrldt='http://xbrl.org/2005/xbrldt'
+  xmlns:generic='http://xbrl.org/2008/generic'
+  xmlns:sfac8='https://github.com/seattlemethod/sfac8'
+
+  xmlns:sfac8-entryPoint='https://github.com/seattlemethod/sfac8/entryPoint'
+  targetNamespace='https://github.com/seattlemethod/sfac8/entryPoint'
+
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <documentation>SFAC 8 Elements of Financial Statements</documentation>
+    <appinfo>
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/presentationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac8-pre.xml' xlink:title='Presentation Links, all' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/calculationLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac8-cal.xml' xlink:title='Calculation Links, all' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac8-def.xml' xlink:title='Definition Links, all' />
+
+
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac8-formula-consistency-BS01.xml' xlink:title='Rules' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac8-formula-consistency-CNA01.xml' xlink:title='Rules' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac8-formula-consistency-IS01.xml' xlink:title='Rules' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac8-formula-consistency-IS02.xml' xlink:title='Rules' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac8-formula-consistency-NP01.xml' xlink:title='Rules' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac8-formula-consistency-NP02.xml' xlink:title='Rules' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac8-formula-rollforward-CNP01.xml' xlink:title='Rules' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac8-formula-rollforward-SE01.xml' xlink:title='Rules' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac8-formula-rollforward-SE02.xml' xlink:title='Rules' />
+      <link:linkbaseRef xlink:type='simple' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='sfac8-formula-rollforward-SHE01.xml' xlink:title='Rules' />
+
+
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+  <import namespace='http://www.xbrl.org/2003/linkbase' schemaLocation='http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd' />
+  <import namespace='http://xbrl.org/2005/xbrldt' schemaLocation='http://www.xbrl.org/2005/xbrldt-2005.xsd' />
+  <import namespace='http://www.xbrl.org/dtr/type/non-numeric' schemaLocation='http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd' />
+  <import namespace='http://www.xbrl.org/dtr/type/numeric' schemaLocation='http://www.xbrl.org/dtr/type/numeric-2009-12-16.xsd' />
+
+  <import namespace='https://github.com/seattlemethod/sfac8' schemaLocation='sfac8.xsd' />
+
+</schema>

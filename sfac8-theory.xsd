@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 2026-05-11 -->
+<!-- Theory Schema -->
+<?xbrlsite name='Source' value='Seattle Method (Github)'?>
+<?xbrlsite name='CreatedBy' value='Charles Hoffman, CPA'?>
+<?xbrlsite name='CreatedDate' value='2025-11-29'?>
+<?xbrlsite name='ReportingSchemeTitle' value='SFAC8 Elements of Financial Statement'?>
+<?xbrlsite name='Description' value='Financial reporting framework which uses SFAC8 to introduce the notion of reporting styles. Similar to SFAC6 except that NetAssets is defined and fund balance is intoduced.'?>
+<?xbrlsite name='ReportingStyles' value='../fac/reporting-styles-cm-ref.xml'?>
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+
+  xmlns:disclosures='https://github.com/seattlemethod/sfac8/disclosures'
+  xmlns:dm='https://github.com/seattlemethod/sfac8/dm'
+  xmlns:fac='https://github.com/seattlemethod/sfac8/fac'
+
+  xmlns:sfac8='https://github.com/seattlemethod/sfac8'
+  xmlns:sfac8-entryPoint='https://github.com/seattlemethod/sfac8/entryPoint'
+  xmlns:sfac8-theory='https://github.com/seattlemethod/sfac8/theory'
+  targetNamespace='https://github.com/seattlemethod/sfac8/theory'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='typeSubtype-rules-def.xml' xlink:title='Types' />
+      <link:linkbaseRef xlink:type='simple' xlink:role='http://www.xbrl.org/2003/role/definitionLinkbaseRef' xlink:arcrole='http://www.w3.org/1999/xlink/properties/linkbase' xlink:href='dr-rules-def.xml' xlink:title='Reporting Checklist' />
+
+
+
+    </appinfo>
+  </annotation>
+<import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+
+<import namespace='https://github.com/seattlemethod/sfac8/entryPoint' schemaLocation='sfac8-entryPoint.xsd' />
+
+<import namespace='https://github.com/seattlemethod/sfac8/fac' schemaLocation='fac.xsd' />
+<import namespace='https://github.com/seattlemethod/sfac8/disclosures' schemaLocation='disclosures.xsd' />
+<import namespace='https://github.com/seattlemethod/sfac8/dm' schemaLocation='dm.xsd' />
+
+
+</schema>

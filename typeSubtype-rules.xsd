@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:generic='http://xbrl.org/2008/generic'
+  xmlns:el-classes='https://github.com/seattlemethod/sfac8/type'
+  targetNamespace='https://github.com/seattlemethod/sfac8/type'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+    <appinfo>
+
+      <link:linkbaseRef xlink:type="simple"  xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef"  xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="typeSubtype-rules-def.xml" xlink:title="Type-Subtype Assocations" />
+
+      <link:linkbaseRef xlink:type="simple"  xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"  xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="sfac8-lab.xml" xlink:title="Label Links" />
+      <link:linkbaseRef xlink:type="simple"  xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"  xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"  xlink:href="https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-lab.xml" xlink:title="Label Links" />
+
+    </appinfo>
+  </annotation>
+  <import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+</schema>

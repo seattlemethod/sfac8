@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+  <roleRef xlink:type='simple' xlink:href='http://www.xbrl.org/lrr/role/negated-2009-12-16.xsd#negatedLabel' roleURI='http://www.xbrl.org/2009/role/negatedLabel' />
+  <roleRef xlink:type='simple' xlink:href='https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-roles.xsd#originallyStatedLabel' roleURI='https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-roles/roles/originallyStatedLabel' />
+  <roleRef xlink:type='simple' xlink:href='http://www.xbrl.org/lrr/role/restated-2006-02-21.xsd#restatedLabel' roleURI='http://www.xbrl.org/2006/role/restatedLabel' />
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Assets' xlink:label='sfac8_Assets' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Assets' xlink:to='sfac8_Assets_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Assets_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Assets</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Assets' xlink:label='sfac8_Assets' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Assets' xlink:to='sfac8_Assets_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Assets_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/documentation'>Assets are probable future economic beneits obtained or controlled by a particular entity as a result of past transactions or events.</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_BalanceSheetHypercube' xlink:label='sfac8_BalanceSheetHypercube' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_BalanceSheetHypercube' xlink:to='sfac8_BalanceSheetHypercube_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_BalanceSheetHypercube_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Balance Sheet [Hypercube]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_BalanceSheetLineItems' xlink:label='sfac8_BalanceSheetLineItems' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_BalanceSheetLineItems' xlink:to='sfac8_BalanceSheetLineItems_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_BalanceSheetLineItems_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Balance Sheet [Line Items]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_BalanceSheetArithmetic' xlink:label='sfac8_BalanceSheetArithmetic' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_BalanceSheetArithmetic' xlink:to='sfac8_BalanceSheetArithmetic_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_BalanceSheetArithmetic_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Balance Sheet [Arithmetic]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangeInNetAssets' xlink:label='sfac8_ChangeInNetAssets' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_ChangeInNetAssets' xlink:to='sfac8_ChangeInNetAssets_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_ChangeInNetAssets_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Change in Net Assets</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInEquityHypercube' xlink:label='sfac8_ChangesInEquityHypercube' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_ChangesInEquityHypercube' xlink:to='sfac8_ChangesInEquityHypercube_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_ChangesInEquityHypercube_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Changes in Equity [Hypercube]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInEquityLineItems' xlink:label='sfac8_ChangesInEquityLineItems' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_ChangesInEquityLineItems' xlink:to='sfac8_ChangesInEquityLineItems_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_ChangesInEquityLineItems_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Changes in Equity [Line Items]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInEquityRollForward' xlink:label='sfac8_ChangesInEquityRollForward' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_ChangesInEquityRollForward' xlink:to='sfac8_ChangesInEquityRollForward_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_ChangesInEquityRollForward_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Changes in Equity [Roll Forward]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInFundBalanceHypercube' xlink:label='sfac8_ChangesInFundBalanceHypercube' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_ChangesInFundBalanceHypercube' xlink:to='sfac8_ChangesInFundBalanceHypercube_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_ChangesInFundBalanceHypercube_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Changes in Fund Balance [Hypercube]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInFundBalanceLineItems' xlink:label='sfac8_ChangesInFundBalanceLineItems' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_ChangesInFundBalanceLineItems' xlink:to='sfac8_ChangesInFundBalanceLineItems_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_ChangesInFundBalanceLineItems_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Changes in Fund Balance [Line Items]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInFundBalanceRollForward' xlink:label='sfac8_ChangesInFundBalanceRollForward' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_ChangesInFundBalanceRollForward' xlink:to='sfac8_ChangesInFundBalanceRollForward_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_ChangesInFundBalanceRollForward_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Changes in Fund Balance [Roll Forward]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInNetAssetsHypercube' xlink:label='sfac8_ChangesInNetAssetsHypercube' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_ChangesInNetAssetsHypercube' xlink:to='sfac8_ChangesInNetAssetsHypercube_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_ChangesInNetAssetsHypercube_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Changes in Net Assets [Hypercube]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInNetAssetsLineItems' xlink:label='sfac8_ChangesInNetAssetsLineItems' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_ChangesInNetAssetsLineItems' xlink:to='sfac8_ChangesInNetAssetsLineItems_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_ChangesInNetAssetsLineItems_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Changes in Net Assets [Line Items]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ChangesInNetAssetsRollUp' xlink:label='sfac8_ChangesInNetAssetsRollUp' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_ChangesInNetAssetsRollUp' xlink:to='sfac8_ChangesInNetAssetsRollUp_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_ChangesInNetAssetsRollUp_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Changes in Net Assets [Roll Up]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncome' xlink:label='sfac8_ComprehensiveIncome' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_ComprehensiveIncome' xlink:to='sfac8_ComprehensiveIncome_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_ComprehensiveIncome_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/documentation'>Comprehensive income is the change in equity of a business enterprise during a period from transactions and other events and circumstances from nonowner sources. It includes all changes in equity during a period except those resulting from investments by </label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncome' xlink:label='sfac8_ComprehensiveIncome' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_ComprehensiveIncome' xlink:to='sfac8_ComprehensiveIncome_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_ComprehensiveIncome_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Comprehensive Income</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeRollUp' xlink:label='sfac8_ComprehensiveIncomeRollUp' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_ComprehensiveIncomeRollUp' xlink:to='sfac8_ComprehensiveIncomeRollUp_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_ComprehensiveIncomeRollUp_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Comprehensive Income [Roll Up]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeStatementHypercube' xlink:label='sfac8_ComprehensiveIncomeStatementHypercube' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_ComprehensiveIncomeStatementHypercube' xlink:to='sfac8_ComprehensiveIncomeStatementHypercube_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_ComprehensiveIncomeStatementHypercube_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Comprehensive Income Statement [Hypercube]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_ComprehensiveIncomeStatementLineItems' xlink:label='sfac8_ComprehensiveIncomeStatementLineItems' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_ComprehensiveIncomeStatementLineItems' xlink:to='sfac8_ComprehensiveIncomeStatementLineItems_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_ComprehensiveIncomeStatementLineItems_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Comprehensive Income Statement [Line Items]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_DistributionsToOwners' xlink:label='sfac8_DistributionsToOwners' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_DistributionsToOwners' xlink:to='sfac8_DistributionsToOwners_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_DistributionsToOwners_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Distributions to Owners</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_DistributionsToOwners' xlink:label='sfac8_DistributionsToOwners' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_DistributionsToOwners' xlink:to='sfac8_DistributionsToOwners_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_DistributionsToOwners_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/documentation'>Distributions to owners are decreases in equity of a particular business enterprise resulting from transferring assets, rendering services, or incurring liabilities by the enterprise to owners. Distributions to owners decrease ownership interest (or equit</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_DistributionsToOwners' xlink:label='sfac8_DistributionsToOwners' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_DistributionsToOwners' xlink:to='sfac8_DistributionsToOwners_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_DistributionsToOwners_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2009/role/negatedLabel'>(Distributions to Owners)</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Equity' xlink:label='sfac8_Equity' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Equity' xlink:to='sfac8_Equity_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Equity_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/periodStartLabel'>Equity, Beginning Balance</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Equity' xlink:label='sfac8_Equity' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Equity' xlink:to='sfac8_Equity_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Equity_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Equity</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Equity' xlink:label='sfac8_Equity' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Equity' xlink:to='sfac8_Equity_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Equity_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/documentation'>Equity or net assets is the residual interest in the assets of an entity that remains after deducting its liabilities. In a business enterprise, the equity is the ownership interest.</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Equity' xlink:label='sfac8_Equity' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Equity' xlink:to='sfac8_Equity_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Equity_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/periodEndLabel'>Equity, Ending Balance</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Expenses' xlink:label='sfac8_Expenses' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Expenses' xlink:to='sfac8_Expenses_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Expenses_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2009/role/negatedLabel'>(Expenses)</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Expenses' xlink:label='sfac8_Expenses' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Expenses' xlink:to='sfac8_Expenses_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Expenses_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/documentation'>Expenses are outflows or other using up of assets or incurrences of liabilities (or a combination of both) from delivering or producing goods, rendering services, or carrying out other activities that constitute the entity&quot;s ongoing major or central opera</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Expenses' xlink:label='sfac8_Expenses' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Expenses' xlink:to='sfac8_Expenses_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Expenses_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Expenses</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalance' xlink:label='sfac8_FundBalance' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_FundBalance' xlink:to='sfac8_FundBalance_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_FundBalance_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Fund Balance</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalance' xlink:label='sfac8_FundBalance' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_FundBalance' xlink:to='sfac8_FundBalance_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_FundBalance_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/periodEndLabel'>Fund Balance, Ending Balance</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalance' xlink:label='sfac8_FundBalance' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_FundBalance' xlink:to='sfac8_FundBalance_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_FundBalance_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/periodStartLabel'>Fund Balance, Beginning Balance</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceHypercube' xlink:label='sfac8_FundBalanceHypercube' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_FundBalanceHypercube' xlink:to='sfac8_FundBalanceHypercube_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_FundBalanceHypercube_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Fund Balance [Hypercube]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceLineItems' xlink:label='sfac8_FundBalanceLineItems' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_FundBalanceLineItems' xlink:to='sfac8_FundBalanceLineItems_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_FundBalanceLineItems_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Fund Balance [Line Items]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceWithDonorRestrictions' xlink:label='sfac8_FundBalanceWithDonorRestrictions' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_FundBalanceWithDonorRestrictions' xlink:to='sfac8_FundBalanceWithDonorRestrictions_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_FundBalanceWithDonorRestrictions_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Fund Balance, With Donor Restrictions</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceRollUp' xlink:label='sfac8_FundBalanceRollUp' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_FundBalanceRollUp' xlink:to='sfac8_FundBalanceRollUp_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_FundBalanceRollUp_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Fund Balance [Roll Up]</label>
+  </labelLink>
+
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_FundBalanceWithoutDonorRestrictions' xlink:label='sfac8_FundBalanceWithoutDonorRestrictions' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_FundBalanceWithoutDonorRestrictions' xlink:to='sfac8_FundBalanceWithoutDonorRestrictions_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_FundBalanceWithoutDonorRestrictions_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Fund Balance, Without Donor Restrictions</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Gains' xlink:label='sfac8_Gains' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Gains' xlink:to='sfac8_Gains_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Gains_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/documentation'>Gains are increases in equity (net assets) from peripheral or incidental transactions of an entity and from all other transactions and other events and circumstances affecting the entity except those that result from revenues or investments by owners.</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Gains' xlink:label='sfac8_Gains' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Gains' xlink:to='sfac8_Gains_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Gains_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Gains</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_InvestmentsByOwners' xlink:label='sfac8_InvestmentsByOwners' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_InvestmentsByOwners' xlink:to='sfac8_InvestmentsByOwners_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_InvestmentsByOwners_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Investments by Owners</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_InvestmentsByOwners' xlink:label='sfac8_InvestmentsByOwners' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_InvestmentsByOwners' xlink:to='sfac8_InvestmentsByOwners_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_InvestmentsByOwners_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/documentation'>Investments by owners are increases in equity of a particular business enterprise resulting from transfers to it from other entities of something valuable to obtain or increase ownership interests (or equity) in it. Assets are most commonly received as in</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Liabilities' xlink:label='sfac8_Liabilities' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Liabilities' xlink:to='sfac8_Liabilities_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Liabilities_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2009/role/negatedLabel'>(Liabilities)</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Liabilities' xlink:label='sfac8_Liabilities' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Liabilities' xlink:to='sfac8_Liabilities_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Liabilities_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/documentation'>Liabilities are probable future sacrifices of economic benefits arising from present obligations of a particular entity to transfer assets or provide services to other entities in the future as a result of past transactions or events.</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Liabilities' xlink:label='sfac8_Liabilities' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Liabilities' xlink:to='sfac8_Liabilities_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Liabilities_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Liabilities</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Losses' xlink:label='sfac8_Losses' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Losses' xlink:to='sfac8_Losses_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Losses_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2009/role/negatedLabel'>(Losses)</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Losses' xlink:label='sfac8_Losses' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Losses' xlink:to='sfac8_Losses_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Losses_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Losses</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Losses' xlink:label='sfac8_Losses' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Losses' xlink:to='sfac8_Losses_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Losses_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/documentation'>Losses are decreases in equity (net assets) from peripheral or incidental transactions of an entity and from all other transactions and other events and circumstances affecting the entity except those that result from expenses or distributions to owners.</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_NetAssets' xlink:label='sfac8_NetAssets' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_NetAssets' xlink:to='sfac8_NetAssets_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_NetAssets_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Net Assets</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_NetAssetsHypercube' xlink:label='sfac8_NetAssetsHypercube' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_NetAssetsHypercube' xlink:to='sfac8_NetAssetsHypercube_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_NetAssetsHypercube_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Net Assets [Hypercube]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_NetAssetsLineItems' xlink:label='sfac8_NetAssetsLineItems' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_NetAssetsLineItems' xlink:to='sfac8_NetAssetsLineItems_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_NetAssetsLineItems_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Net Assets [Line Items]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_NetAssetsRollUp' xlink:label='sfac8_NetAssetsRollUp' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_NetAssetsRollUp' xlink:to='sfac8_NetAssetsRollUp_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_NetAssetsRollUp_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Net Assets [Roll Up]</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_OtherIncreasesDecreasesInFundBalance' xlink:label='sfac8_OtherIncreasesDecreasesInFundBalance' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_OtherIncreasesDecreasesInFundBalance' xlink:to='sfac8_OtherIncreasesDecreasesInFundBalance_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_OtherIncreasesDecreasesInFundBalance_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Other Increases (Decreases) in Fund Balance</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Revenues' xlink:label='sfac8_Revenues' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Revenues' xlink:to='sfac8_Revenues_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Revenues_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/documentation'>Revenues are inflows or other enhancements of assets of an entity or settlements of its liabilities (or a combination of both) from delivering or producing goods, rendering services, or other activities that constitute the entity&quot;s ongoing major or centra</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_Revenues' xlink:label='sfac8_Revenues' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_Revenues' xlink:to='sfac8_Revenues_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_Revenues_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Revenues</label>
+  </labelLink>
+
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' xlink:label='sfac8_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' xlink:to='sfac8_IncomeFromPeripheralOrIncidentalTransactionsOfEntity_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_IncomeFromPeripheralOrIncidentalTransactionsOfEntity_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Income from Peripheral or Incidental Transactions of Entity</label>
+  </labelLink>
+
+  <labelLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='sfac8.xsd#sfac8_IncomeFromNormalActivitiesOfEntity' xlink:label='sfac8_IncomeFromNormalActivitiesOfEntity' />
+    <labelArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-label' xlink:from='sfac8_IncomeFromNormalActivitiesOfEntity' xlink:to='sfac8_IncomeFromNormalActivitiesOfEntity_lbl' />
+    <label xlink:type='resource' xlink:label='sfac8_IncomeFromNormalActivitiesOfEntity_lbl' xml:lang='en' xlink:role='http://www.xbrl.org/2003/role/label'>Income from Normal Activities of Entity</label>
+  </labelLink>
+
+</linkbase>
