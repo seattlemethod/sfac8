@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation=" http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <roleRef xlink:type="simple" xlink:href="../fac.xsd#ChangesInNetAssets" roleURI="https://github.com/seattlemethod/sfac8/fac/ChangesInNetAssets" />
+  <calculationLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/sfac8/fac/ChangesInNetAssets">
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_ChangeInNetAssets" xlink:label="fac_ChangeInNetAssets" />
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_Revenues" xlink:label="fac_Revenues" />
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_ChangeInNetAssets" xlink:to="fac_Revenues" order="1" weight="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_Expenses" xlink:label="fac_Expenses" />
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_ChangeInNetAssets" xlink:to="fac_Expenses" order="2" weight="-1" use="optional" />
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_Gains" xlink:label="fac_Gains" />
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_ChangeInNetAssets" xlink:to="fac_Gains" order="3" weight="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_Losses" xlink:label="fac_Losses" />
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_ChangeInNetAssets" xlink:to="fac_Losses" order="4" weight="-1" use="optional" />
+  </calculationLink>
+</linkbase>

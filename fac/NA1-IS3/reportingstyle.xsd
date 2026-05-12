@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<schema
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:fac="https://github.com/seattlemethod/sfac8/fac"
+  xmlns:generic="http://xbrl.org/2008/generic"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  xmlns:rs1="https://github.com/seattlemethod/sfac8/fac/rs1"
+  targetNamespace="https://github.com/seattlemethod/sfac8/fac/rs1"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+        <link:linkbaseRef xlink:type="simple" xlink:href="reportingstyle-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Presentation Links, all" />
+        <link:linkbaseRef xlink:type="simple" xlink:href="reportingstyle-definition.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Definition Links, all" />
+        <link:linkbaseRef xlink:type="simple" xlink:href="reportingstyle-calculation.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Calculation Links, all" />
+
+
+        <link:linkbaseRef xlink:type="simple" xlink:href="mapping-definition.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Mappings" />
+
+        <link:linkbaseRef xlink:type="simple" xlink:href="rule-consistency-assets-formula.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Consistency, Assets" />
+        <link:linkbaseRef xlink:type="simple" xlink:href="rule-consistency-comprehensiveincome3.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Consistency, Comprehensive Income" />
+
+        <link:linkbaseRef xlink:type="simple" xlink:href="rule-derive-assets-formula.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Derive, Assets" />
+        <link:linkbaseRef xlink:type="simple" xlink:href="rule-derive-liabilities-formula.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Derive, Liabilities" />
+        <link:linkbaseRef xlink:type="simple" xlink:href="rule-derive-netassets-formula.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Derive, Net Assets" />
+
+
+    </appinfo>
+  </annotation>
+
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd" />
+  <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd" />
+
+  <import namespace="https://github.com/seattlemethod/sfac8/fac" schemaLocation="../fac.xsd" />
+
+</schema>

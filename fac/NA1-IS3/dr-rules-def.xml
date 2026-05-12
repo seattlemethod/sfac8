@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+ 
+<link:linkbase
+  xmlns='http://www.xbrl.org/2003/linkbase'
+  xmlns:xbrldt='http://xbrl.org/2005/xbrldt'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+
+  <link:roleRef xlink:type='simple' xlink:href='dr-rules-roles.xsd#ReportingChecklist' roleURI='https://github.com/seattlemethod/sfac8/elr/role/ReportingChecklist'/>
+
+  <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#class-equivalentClass' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass'/>
+  <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#disclosure-allowedAlternativeDisclosure' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/disclosure-allowedAlternativeDisclosure'/>
+  <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#financialReport-possibleDisclosure' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-possibleDisclosure'/>
+  <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#financialReport-reportsConcept' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-reportsConcept'/>
+  <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#financialReport-requiresDisclosure' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-requiresDisclosure'/>
+  <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#reportedDisclosure-requiresDisclosure' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportedDisclosure-requiresDisclosure'/>
+  <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/drules-arcroles.xsd#reportingLineItem-requiresDisclosure' arcroleURI='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/reportingLineItem-requiresDisclosure'/>
+
+  <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/elr/role/ReportingChecklist' xlink:title='General purpose financial report created under SFAC8.  Strict, best practices.'>
+    <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+    <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+    <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/class-equivalentClass' xlink:from='cm_Thing' xlink:to='cm_FinancialReport' order='1' use='optional' />
+  </link:definitionLink>
+
+  <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/elr/role/ReportingChecklist' xlink:title='A report REQUIRES a Statement of NetAssets.'>
+    <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+    <link:loc xlink:type='locator' xlink:href='../../disclosures.xsd#disclosures_NetAssets' xlink:label='disclosures_NetAssets' />
+    <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-requiresDisclosure' xlink:from='cm_FinancialReport' xlink:to='disclosures_NetAssets' order='2' use='optional' />
+  </link:definitionLink>
+
+  <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/elr/role/ReportingChecklist' xlink:title='A report REQUIRES a Statement of ChangesInNetAssets.'>
+    <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+    <link:loc xlink:type='locator' xlink:href='../../disclosures.xsd#disclosures_ChangesInNetAssets' xlink:label='disclosures_ChangesInNetAssets' />
+    <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-requiresDisclosure' xlink:from='cm_FinancialReport' xlink:to='disclosures_ChangesInNetAssets' order='3' use='optional' />
+  </link:definitionLink>
+
+  <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/elr/role/ReportingChecklist' xlink:title='A report REQUIRES a Statement of ChangesInFundBalance.'>
+    <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_FinancialReport' xlink:label='cm_FinancialReport' />
+    <link:loc xlink:type='locator' xlink:href='../../disclosures.xsd#disclosures_ChangesInFundBalance' xlink:label='disclosures_ChangesInFundBalance' />
+    <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/drules-arcroles/arcrole/financialReport-requiresDisclosure' xlink:from='cm_FinancialReport' xlink:to='disclosures_ChangesInFundBalance' order='4' use='optional' />
+  </link:definitionLink>
+
+</link:linkbase>
