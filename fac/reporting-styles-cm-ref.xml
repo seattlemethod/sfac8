@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<linkbase
+  xmlns:rpart='https://xbrlsite.azurewebsites.net/seattlemethod/cm/rparts-rs'
+  xmlns='http://www.xbrl.org/2003/linkbase'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xsi:schemaLocation='
+    http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
+    https://xbrlsite.azurewebsites.net/seattlemethod/cm/rparts-rs https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-rparts-rs.xsd
+    '>
+
+   <roleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-rparts-rs.xsd#reportingStyle' roleURI='https://github.com/seattlemethod/universal/cm/roles/reportingStyle'/>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_ReportingStyle' xlink:label='cm_ReportingStyle' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='cm_ReportingStyle' xlink:to='cm_ReportingStyle_lbl' />
+    <reference xlink:type='resource' xlink:label='cm_ReportingStyle_lbl' xlink:role='https://github.com/seattlemethod/universal/cm/roles/reportingStyle'>
+        <rpart:Description>(BS1-IS1) Statement of Financial Postion, Statement of Income</rpart:Description>
+        <rpart:ReportingStyleCode>BS1-IS1</rpart:ReportingStyleCode>
+        <rpart:ReportingStyleLink>https://raw.githubusercontent.com/seattlemethod/sfac8/refs/heads/main/fac/BS1-IS1/reportingstyle.xsd</rpart:ReportingStyleLink>
+        <rpart:ReportingChecklistLink>https://raw.githubusercontent.com/seattlemethod/sfac8/refs/heads/main/fac/BS1-IS1/dr-rules-def.xml</rpart:ReportingChecklistLink>
+        <rpart:TypeSubtypeRulesLink>https://raw.githubusercontent.com/seattlemethod/sfac8/refs/heads/main/fac/BS1-IS1/types-rules-def.xml</rpart:TypeSubtypeRulesLink>
+    </reference>
+  </referenceLink>
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_ReportingStyle' xlink:label='cm_ReportingStyle' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='cm_ReportingStyle' xlink:to='cm_ReportingStyle_lbl' />
+    <reference xlink:type='resource' xlink:label='cm_ReportingStyle_lbl' xlink:role='https://github.com/seattlemethod/universal/cm/roles/reportingStyle'>
+        <rpart:Description>(BS1-IS2) Statement of Financial Postion, Statement of Income (Alternative)</rpart:Description>
+        <rpart:ReportingStyleCode>BS1-IS2</rpart:ReportingStyleCode>
+        <rpart:ReportingStyleLink>https://raw.githubusercontent.com/seattlemethod/sfac8/refs/heads/main/fac/BS1-IS2/reportingstyle.xsd</rpart:ReportingStyleLink>
+        <rpart:ReportingChecklistLink>https://raw.githubusercontent.com/seattlemethod/sfac8/refs/heads/main/fac/BS1-IS2/dr-rules-def.xml</rpart:ReportingChecklistLink>
+        <rpart:TypeSubtypeRulesLink>https://raw.githubusercontent.com/seattlemethod/sfac8/refs/heads/main/fac/BS1-IS2/types-rules-def.xml</rpart:TypeSubtypeRulesLink>
+    </reference>
+  </referenceLink>
+
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_ReportingStyle' xlink:label='cm_ReportingStyle' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='cm_ReportingStyle' xlink:to='cm_ReportingStyle_lbl' />
+    <reference xlink:type='resource' xlink:label='cm_ReportingStyle_lbl' xlink:role='https://github.com/seattlemethod/universal/cm/roles/reportingStyle'>
+        <rpart:Description>(NA1-IS3) Statement of Net Assets, Statement of Changes in Net Assets</rpart:Description>
+        <rpart:ReportingStyleCode>NA1-IS3</rpart:ReportingStyleCode>
+        <rpart:ReportingStyleLink>https://raw.githubusercontent.com/seattlemethod/sfac8/refs/heads/main/fac/NA1-IS3/reportingstyle.xsd</rpart:ReportingStyleLink>
+        <rpart:ReportingChecklistLink>https://raw.githubusercontent.com/seattlemethod/sfac8/refs/heads/main/fac/NA1-IS3/dr-rules-def.xml</rpart:ReportingChecklistLink>
+        <rpart:TypeSubtypeRulesLink>https://raw.githubusercontent.com/seattlemethod/sfac8/refs/heads/main/fac/NA1-IS3/types-rules-def.xml</rpart:TypeSubtypeRulesLink>
+    </reference>
+  </referenceLink>
+
+
+  <referenceLink xlink:type='extended' xlink:role='http://www.xbrl.org/2003/role/link'>
+    <loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_ReportingStyle' xlink:label='cm_ReportingStyle' />
+    <referenceArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/concept-reference' xlink:from='cm_ReportingStyle' xlink:to='cm_ReportingStyle_lbl' />
+    <reference xlink:type='resource' xlink:label='cm_ReportingStyle_lbl' xlink:role='https://github.com/seattlemethod/universal/cm/roles/reportingStyle'>
+        <rpart:Description>(REFERENCE) Reference Implementation</rpart:Description>
+        <rpart:ReportingStyleCode>REFERENCE</rpart:ReportingStyleCode>
+        <rpart:ReportingStyleLink>https://raw.githubusercontent.com/seattlemethod/sfac8/refs/heads/main/fac/NA1-IS3/reportingstyle.xsd</rpart:ReportingStyleLink>
+        <rpart:ReportingChecklistLink>https://xbrlsite.azurewebsites.net/seattlemethod/platinum/sfac8/dr-rules-def.xml</rpart:ReportingChecklistLink>
+        <rpart:TypeSubtypeRulesLink>https://xbrlsite.azurewebsites.net/seattlemethod/platinum/sfac8/typeSubtype-rules-def.xml</rpart:TypeSubtypeRulesLink>
+    </reference>
+  </referenceLink>
+
+
+</linkbase>
