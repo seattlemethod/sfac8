@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xsi:schemaLocation=" http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd http://xbrl.org/2005/xbrldt http://www.xbrl.org/2005/xbrldt-2005.xsd">
+  <roleRef xlink:type="simple" xlink:href="../fac.xsd#BalanceSheetClassified" roleURI="https://github.com/seattlemethod/sfac8/fac/BalanceSheetClassified" />
+  <arcroleRef xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all" arcroleURI="http://xbrl.org/int/dim/arcrole/all" />
+  <arcroleRef xlink:type="simple" xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member" arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" />
+  <roleRef xlink:type="simple" xlink:href="../fac.xsd#ComprehensiveIncomeAlternative" roleURI="https://github.com/seattlemethod/sfac8/fac/ComprehensiveIncomeAlternative" />
+  <definitionLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/sfac8/fac/BalanceSheetClassified" xlink:title="101-Balance Sheet, Classified">
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_BalanceSheetClassifiedLineItems" xlink:label="fac_BalanceSheetClassifiedLineItems" />
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_BalanceSheetClassifiedHypercube" xlink:label="fac_BalanceSheetClassifiedHypercube" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="fac_BalanceSheetClassifiedLineItems" xlink:to="fac_BalanceSheetClassifiedHypercube" order="1" use="optional" xbrldt:contextElement="segment" xbrldt:closed="true" />
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_Assets" xlink:label="fac_Assets" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_BalanceSheetClassifiedLineItems" xlink:to="fac_Assets" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_Liabilities" xlink:label="fac_Liabilities" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_BalanceSheetClassifiedLineItems" xlink:to="fac_Liabilities" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_Equity" xlink:label="fac_Equity" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_BalanceSheetClassifiedLineItems" xlink:to="fac_Equity" order="4" use="optional" />
+  </definitionLink>
+  <definitionLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/sfac8/fac/ComprehensiveIncomeAlternative">
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_ComprehensiveIncomeAlternativeLineItems" xlink:label="fac_ComprehensiveIncomeAlternativeLineItems" />
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_ComprehensiveIncomeAlternativeHypercube" xlink:label="fac_ComprehensiveIncomeAlternativeHypercube" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="fac_ComprehensiveIncomeAlternativeLineItems" xlink:to="fac_ComprehensiveIncomeAlternativeHypercube" order="1" use="optional" xbrldt:contextElement="segment" xbrldt:closed="true" />
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeAttributableToOperatingActivities" xlink:label="fac_IncomeAttributableToOperatingActivities" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_ComprehensiveIncomeAlternativeLineItems" xlink:to="fac_IncomeAttributableToOperatingActivities" order="2" use="optional" />
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeAttributableToPeriperalOrIncidentalActivities" xlink:label="fac_IncomeAttributableToPeriperalOrIncidentalActivities" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_ComprehensiveIncomeAlternativeLineItems" xlink:to="fac_IncomeAttributableToPeriperalOrIncidentalActivities" order="3" use="optional" />
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_ComprehensiveIncome" xlink:label="fac_ComprehensiveIncome" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="fac_ComprehensiveIncomeAlternativeLineItems" xlink:to="fac_ComprehensiveIncome" order="4" use="optional" />
+  </definitionLink>
+</linkbase>

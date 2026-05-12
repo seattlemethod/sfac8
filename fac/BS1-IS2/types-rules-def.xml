@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+ 
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+
+   <link:roleRef xlink:type='simple' xlink:href='types-roles.xsd#TypeSubtypeAssociations' roleURI='https://github.com/seattlemethod/sfac8/typeSubtype/elr/role/TypeSubtypeAssociations'/>
+
+   <link:arcroleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-arcroles.xsd#has-part' arcroleURI='https://github.com/seattlemethod/universal/cm/arcrole/has-part'/>
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/typeSubtype/elr/role/TypeSubtypeAssociations' xlink:title='Type-Subtype'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Disclosure' xlink:label='cm_Disclosure' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:from='cm_Thing' xlink:to='cm_Disclosure' order='1' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/typeSubtype/elr/role/TypeSubtypeAssociations' xlink:title='Type-Subtype'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Concept' xlink:label='cm_Concept' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:from='cm_Thing' xlink:to='cm_Concept' order='2' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/typeSubtype/elr/role/TypeSubtypeAssociations' xlink:title='Type-Subtype'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Thing' xlink:label='cm_Thing' />
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Hypercube' xlink:label='cm_Hypercube' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:from='cm_Thing' xlink:to='cm_Hypercube' order='3' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/typeSubtype/elr/role/TypeSubtypeAssociations' xlink:title='Type-Subtype'>
+     <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Concept' xlink:label='cm_Concept' />
+      <link:loc xlink:type='locator' xlink:href='../../sfac8.xsd#sfac8_Assets' xlink:label='sfac8_Assets' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:from='cm_Concept' xlink:to='sfac8_Assets' order='5' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/typeSubtype/elr/role/TypeSubtypeAssociations' xlink:title='Type-Subtype'>
+     <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Concept' xlink:label='cm_Concept' />
+      <link:loc xlink:type='locator' xlink:href='../../sfac8.xsd#sfac8_Liabilities' xlink:label='sfac8_Liabilities' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:from='cm_Concept' xlink:to='sfac8_Liabilities' order='6' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/typeSubtype/elr/role/TypeSubtypeAssociations' xlink:title='Type-Subtype'>
+     <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Concept' xlink:label='cm_Concept' />
+      <link:loc xlink:type='locator' xlink:href='../../sfac8.xsd#sfac8_Equity' xlink:label='sfac8_Equity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:from='cm_Concept' xlink:to='sfac8_Equity' order='7' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/typeSubtype/elr/role/TypeSubtypeAssociations' xlink:title='Type-Subtype'>
+     <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Concept' xlink:label='cm_Concept' />
+      <link:loc xlink:type='locator' xlink:href='../../sfac8.xsd#sfac8_ComprehensiveIncome' xlink:label='sfac8_ComprehensiveIncome' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:from='cm_Concept' xlink:to='sfac8_ComprehensiveIncome' order='8' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/typeSubtype/elr/role/TypeSubtypeAssociations' xlink:title='Type-Subtype'>
+     <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Concept' xlink:label='cm_Concept' />
+      <link:loc xlink:type='locator' xlink:href='../../sfac8.xsd#sfac8_DistributionsToOwners' xlink:label='sfac8_DistributionsToOwners' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:from='cm_Concept' xlink:to='sfac8_DistributionsToOwners' order='9' use='optional' />
+   </link:definitionLink>
+
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/typeSubtype/elr/role/TypeSubtypeAssociations' xlink:title='Type-Subtype'>
+     <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Concept' xlink:label='cm_Concept' />
+      <link:loc xlink:type='locator' xlink:href='../../sfac8.xsd#sfac8_InvestmentsByOwners' xlink:label='sfac8_InvestmentsByOwners' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:from='cm_Concept' xlink:to='sfac8_InvestmentsByOwners' order='12' use='optional' />
+   </link:definitionLink>
+
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/typeSubtype/elr/role/TypeSubtypeAssociations' xlink:title='Type-Subtype'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Hypercube' xlink:label='cm_Hypercube' />
+      <link:loc xlink:type='locator' xlink:href='../../sfac8.xsd#sfac8_BalanceSheetHypercube' xlink:label='sfac8_BalanceSheetHypercube' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:from='cm_Hypercube' xlink:to='sfac8_BalanceSheetHypercube' order='21' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/typeSubtype/elr/role/TypeSubtypeAssociations' xlink:title='Type-Subtype'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Hypercube' xlink:label='cm_Hypercube' />
+      <link:loc xlink:type='locator' xlink:href='../../sfac8.xsd#sfac8_ComprehensiveIncomeStatementHypercube' xlink:label='sfac8_ComprehensiveIncomeStatementHypercube' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:from='cm_Hypercube' xlink:to='sfac8_ComprehensiveIncomeStatementHypercube' order='22' use='optional' />
+   </link:definitionLink>
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/typeSubtype/elr/role/TypeSubtypeAssociations' xlink:title='Type-Subtype'>
+      <link:loc xlink:type='locator' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm.xsd#cm_Hypercube' xlink:label='cm_Hypercube' />
+      <link:loc xlink:type='locator' xlink:href='../../sfac8.xsd#sfac8_ChangesInEquityHypercube' xlink:label='sfac8_ChangesInEquityHypercube' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='http://www.xbrl.org/2003/arcrole/general-special' xlink:from='cm_Hypercube' xlink:to='sfac8_ChangesInEquityHypercube' order='23' use='optional' />
+   </link:definitionLink>
+
+
+
+
+
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/typeSubtype/elr/role/TypeSubtypeAssociations' xlink:title='Type-Subtype'>
+     <link:loc xlink:type='locator' xlink:href='../../sfac8.xsd#sfac8_ComprehensiveIncome' xlink:label='sfac8_ComprehensiveIncome' />
+     <link:loc xlink:type='locator' xlink:href='../../sfac8.xsd#sfac8_IncomeFromNormalActivitiesOfEntity' xlink:label='sfac8_IncomeFromNormalActivitiesOfEntity' />
+     <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:from='sfac8_ComprehensiveIncome' xlink:to='sfac8_IncomeFromNormalActivitiesOfEntity' order='1' use='optional' />
+   </link:definitionLink>
+   <link:definitionLink xlink:type='extended' xlink:role='https://github.com/seattlemethod/sfac8/typeSubtype/elr/role/TypeSubtypeAssociations' xlink:title='Type-Subtype'>
+      <link:loc xlink:type='locator' xlink:href='../../sfac8.xsd#sfac8_ComprehensiveIncome' xlink:label='sfac8_ComprehensiveIncome' />
+      <link:loc xlink:type='locator' xlink:href='../../sfac8.xsd#sfac8_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' xlink:label='sfac8_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' />
+      <link:definitionArc xlink:type='arc' xlink:arcrole='https://github.com/seattlemethod/universal/cm/arcrole/has-part' xlink:from='sfac8_ComprehensiveIncome' xlink:to='sfac8_IncomeFromPeripheralOrIncidentalTransactionsOfEntity' order='2' use='optional' />
+   </link:definitionLink>
+
+
+</link:linkbase>

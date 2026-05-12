@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation=" http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <roleRef xlink:type="simple" xlink:href="../fac.xsd#ComprehensiveIncomeAlternative" roleURI="https://github.com/seattlemethod/sfac8/fac/ComprehensiveIncomeAlternative" />
+  <calculationLink xlink:type="extended" xlink:role="https://github.com/seattlemethod/sfac8/fac/ComprehensiveIncomeAlternative">
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_ComprehensiveIncome" xlink:label="fac_ComprehensiveIncome" />
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeAttributableToOperatingActivities" xlink:label="fac_IncomeAttributableToOperatingActivities" />
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_ComprehensiveIncome" xlink:to="fac_IncomeAttributableToOperatingActivities" order="1" weight="1" use="optional" />
+    <loc xlink:type="locator" xlink:href="../fac.xsd#fac_IncomeAttributableToPeriperalOrIncidentalActivities" xlink:label="fac_IncomeAttributableToPeriperalOrIncidentalActivities" />
+    <calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="fac_ComprehensiveIncome" xlink:to="fac_IncomeAttributableToPeriperalOrIncidentalActivities" order="2" weight="1" use="optional" />
+  </calculationLink>
+</linkbase>
