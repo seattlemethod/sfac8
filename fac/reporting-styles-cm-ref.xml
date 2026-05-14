@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <linkbase
-  xmlns:rpart='https://xbrlsite.azurewebsites.net/seattlemethod/cm/rparts-rs'
+  xmlns:rpart='https://github.com/seattlemethod/universal/cm/rparts-rs'
   xmlns='http://www.xbrl.org/2003/linkbase'
   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
   xmlns:xlink='http://www.w3.org/1999/xlink'
   xsi:schemaLocation='
     http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
-    https://xbrlsite.azurewebsites.net/seattlemethod/cm/rparts-rs https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-rparts-rs.xsd
+    https://github.com/seattlemethod/universal/cm/rparts-rs https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-rparts-rs.xsd
     '>
 
    <roleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-rparts-rs.xsd#reportingStyle' roleURI='https://github.com/seattlemethod/universal/cm/roles/reportingStyle'/>
