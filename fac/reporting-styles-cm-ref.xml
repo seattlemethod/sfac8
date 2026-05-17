@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <linkbase
-  xmlns:rpart='https://github.com/seattlemethod/universal/cm/rparts-rs'
+  xmlns:rpart='https://xbrlsite.azurewebsites.net/seattlemethod/cm/rparts-rs'
   xmlns='http://www.xbrl.org/2003/linkbase'
   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
   xmlns:xlink='http://www.w3.org/1999/xlink'
   xsi:schemaLocation='
     http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd
-    https://github.com/seattlemethod/universal/cm/rparts-rs https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-rparts-rs.xsd
+    https://xbrlsite.azurewebsites.net/seattlemethod/cm/rparts-rs https://xbrlsite.azurewebsites.net/seattlemethod/cm/cm-rparts-rs.xsd
     '>
 
    <roleRef xlink:type='simple' xlink:href='https://raw.githubusercontent.com/seattlemethod/universal/refs/heads/main/cm-rparts-rs.xsd#reportingStyle' roleURI='https://github.com/seattlemethod/universal/cm/roles/reportingStyle'/>
@@ -57,8 +57,8 @@
         <rpart:Description>(REFERENCE) Reference Implementation</rpart:Description>
         <rpart:ReportingStyleCode>REFERENCE</rpart:ReportingStyleCode>
         <rpart:ReportingStyleLink>https://raw.githubusercontent.com/seattlemethod/sfac8/refs/heads/main/fac/NA1-IS3/reportingstyle.xsd</rpart:ReportingStyleLink>
-        <rpart:ReportingChecklistLink>https://xbrlsite.azurewebsites.net/seattlemethod/platinum/sfac8/dr-rules-def.xml</rpart:ReportingChecklistLink>
-        <rpart:TypeSubtypeRulesLink>https://xbrlsite.azurewebsites.net/seattlemethod/platinum/sfac8/typeSubtype-rules-def.xml</rpart:TypeSubtypeRulesLink>
+        <rpart:ReportingChecklistLink>https://raw.githubusercontent.com/seattlemethod/sfac8/refs/heads/main/dr-rules-def.xml</rpart:ReportingChecklistLink>
+        <rpart:TypeSubtypeRulesLink>https://raw.githubusercontent.com/seattlemethod/sfac8/refs/heads/main/typeSubtype-rules-def.xml</rpart:TypeSubtypeRulesLink>
     </reference>
   </referenceLink>
 
